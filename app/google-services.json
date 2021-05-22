@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1025361469024",
+    "project_id": "begequiz-bbd04",
+    "storage_bucket": "begequiz-bbd04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025361469024:android:85f3dbf20207895af7ed05",
+        "android_client_info": {
+          "package_name": "com.example.begequiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025361469024-mo8qr74gaidijd0fn9oiq89r0rcfpbk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB8TtSAEvkRDiWoGTxrh2rxnDa6rX8X7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025361469024-mo8qr74gaidijd0fn9oiq89r0rcfpbk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
