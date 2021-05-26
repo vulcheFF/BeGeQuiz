@@ -97,7 +97,7 @@ public class QuizActivity extends AppCompatActivity {
 
     }
     void resetTimer(){
-        timer=new CountDownTimer(5000,1000) {
+        timer=new CountDownTimer(20000,1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 binding.timer.setText(String.valueOf(millisUntilFinished/1000));
