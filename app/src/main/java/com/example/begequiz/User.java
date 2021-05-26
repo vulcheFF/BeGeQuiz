@@ -1,17 +1,17 @@
 package com.example.begequiz;
 
 public class User {
-    private String name,email,password;
+    private String name,email;
     private long coins=0;
 
     public User(){
 
     }
 
-    public User(String name, String email, String password) {
+    public User(String name, String email) {
         this.name = name;
         this.email = email;
-        this.password = password;
+
     }
 
     public String getName() {
@@ -30,13 +30,7 @@ public class User {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
-    }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
     public long getCoins() {
         return coins;

@@ -63,7 +63,7 @@ public class SignupActivity extends AppCompatActivity {
 
 
 
-                final User user = new User(name,email,pass);
+                final User user = new User(name,email);
 
                 dialog.show();
 
