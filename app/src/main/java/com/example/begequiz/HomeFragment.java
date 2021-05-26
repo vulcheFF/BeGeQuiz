@@ -29,7 +29,7 @@ public class HomeFragment extends Fragment {
     FirebaseFirestore database;
 
     public HomeFragment() {
-        // Required empty public constructor
+
     }
 
 

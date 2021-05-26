@@ -13,7 +13,7 @@ public class CategoryModel {
 
     public CategoryModel(){
 
-     }
+    }
 
     public String getCategoryId() {
         return categoryId;
@@ -38,4 +38,4 @@ public class CategoryModel {
     public void setCategoryImage(String categoryImage) {
         this.categoryImage = categoryImage;
     }
-      }
+}
