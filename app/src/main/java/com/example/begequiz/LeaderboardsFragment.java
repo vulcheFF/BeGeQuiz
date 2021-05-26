@@ -59,7 +59,7 @@ public class LeaderboardsFragment extends Fragment {
             @Override
             public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                 for(DocumentSnapshot snapshot:queryDocumentSnapshots){
-                    User user =snapshot.toObject(User.class);
+                    User user = snapshot.toObject(User.class);
                     users.add(user);
                 }
                 adapter.notifyDataSetChanged();

@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder> {
     Context context;
     ArrayList<CategoryModel>  categoryModels;
-    CategoryModel model;
+
     public CategoryAdapter(Context context,ArrayList<CategoryModel> categoryModels){
         this.context=context;
         this.categoryModels=categoryModels;
@@ -36,7 +36,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
     @Override
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
-         model = categoryModels.get(position);
+        CategoryModel  model = categoryModels.get(position);
 
         holder.textView.setText(model.getCategoryName());
         Glide.with(context)

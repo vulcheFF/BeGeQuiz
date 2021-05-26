@@ -28,7 +28,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/index"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bege" />
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/name"

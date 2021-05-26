@@ -10,12 +10,10 @@ public class CategoryModel {
         this.categoryName = categoryName;
         this.categoryImage = categoryImage;
     }
+
     public CategoryModel(){
 
     }
-
-
-
 
     public String getCategoryId() {
         return categoryId;
