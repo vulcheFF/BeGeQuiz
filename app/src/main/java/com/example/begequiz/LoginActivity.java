@@ -43,15 +43,15 @@ public class LoginActivity extends AppCompatActivity {
         binding.submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email,pass;
+                String email;
 
                         email = binding.emailBox.getText().toString();
-                        pass = binding.passwordBox.getText().toString();
+
                         if(TextUtils.isEmpty(email)){
                             binding.emailBox.setError("Нужен е имейл");
                             return;
                         }
-                        if(TextUtils.isEmpty(pass)){
+                        if(TextUtils.isEmpty(binding.passwordBox.getText().toString())){
                             binding.passwordBox.setError("Нужна е парола");
                             return;
                         }
@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 dialog.show();
 
-                        auth.signInWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        auth.signInWithEmailAndPassword(email,binding.passwordBox.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 dialog.dismiss();

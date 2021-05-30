@@ -40,11 +40,10 @@ public class SignupActivity extends AppCompatActivity {
         binding.createAccBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email,pass,name;
+                String email,name;
 
                 name=binding.nameBox.getText().toString();
                 email=binding.emailBox.getText().toString();
-                pass = binding.passwordBox.getText().toString();
 
 
                 if(TextUtils.isEmpty(name)){
@@ -56,7 +55,7 @@ public class SignupActivity extends AppCompatActivity {
                     binding.emailBox.setError("Нужен е имейл");
                     return;
                 }
-                if(TextUtils.isEmpty(pass)){
+                if(TextUtils.isEmpty(binding.passwordBox.getText().toString())){
                     binding.passwordBox.setError("Нужна е парола");
                     return;
                 }
@@ -67,7 +66,7 @@ public class SignupActivity extends AppCompatActivity {
 
                 dialog.show();
 
-                auth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                auth.createUserWithEmailAndPassword(email,binding.passwordBox.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){

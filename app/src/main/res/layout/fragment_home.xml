@@ -32,12 +32,11 @@
         android:id="@+id/imageView2"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.116"
         app:layout_constraintStart_toStartOf="@+id/view4"
         app:layout_constraintTop_toTopOf="@+id/view3"
-        app:layout_constraintVertical_bias="0.9"
         app:srcCompat="@drawable/logo" />
 
     <TextView
@@ -69,6 +68,8 @@
         android:layout_height="wrap_content"
         android:text="- Играйте"
         android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -78,6 +79,8 @@
         android:layout_height="wrap_content"
         android:text="- Събирайте жълтици"
         android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -87,6 +90,8 @@
         android:layout_height="wrap_content"
         android:text="- Забавлявайте се"
         android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
