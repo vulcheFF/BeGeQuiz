@@ -7,8 +7,8 @@ public class CategoryModel {
 
     public CategoryModel(String categoryId, String categoryName, String categoryImage) {
         this.categoryId = categoryId;
-        this.categoryName = categoryName;
-        this.categoryImage = categoryImage;
+        this.categoryName =  categoryName;
+        this.categoryImage =  categoryImage;
     }
 
     public CategoryModel(){
